@@ -1,5 +1,23 @@
+button {
+    border-radius: 10px;
+  margin: 20px 5px;
+  display: inline-block;
+  background-color: #F96CFF;
+  border: 2px solid #FA92FB;
+  color: #fff;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 5px 20px;
+  text-decoration: none;
+  box-shadow: 2px 3px 5px 1px #f0f0f0;
+}
 .App-logo {
   max-width: 400px;
   display: block;
 margin: 0 auto;
+}
+
+.search-form {
+  text-align: center;
+  padding: 30px;
 }

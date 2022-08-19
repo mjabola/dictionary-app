@@ -1,13 +1,17 @@
 import logo from './header.png';
+import Dictionary from './Dictionary';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container">
       <header className="App-header">
         <img src={logo} className="App-logo img-fluid" alt="logo" />
       </header>
-      <p className="text-center">Coming Soon</p>
+      <main>
+        <Dictionary />
+      </main>
     </div>
   );
 }
