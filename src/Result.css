@@ -1,0 +1,22 @@
+:root {
+  --primary-purple: #A653F5;
+  --secondary-purple: #8F8CF2;
+  --teal: #65B8BF;
+  --primary-pink: #F96CFF;
+  --secondary-pink: #FA92FB;
+}
+
+.example {
+    font-size: 10pt;
+    font-style: italic;
+    color: var(--secondary-purple);
+    text-indent: 50px;
+}
+
+.display-definition {
+    border: 1px;
+}
+
+.result-container {
+padding-bottom: 20px;
+}
