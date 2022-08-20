@@ -1,9 +1,17 @@
+:root {
+  --primary-purple: #A653F5;
+  --secondary-purple: #8F8CF2;
+  --teal: #65B8BF;
+  --primary-pink: #F96CFF;
+  --secondary-pink: #FA92FB;
+}
+
 button {
-    border-radius: 10px;
+border-radius: 10px;
   margin: 20px 5px;
   display: inline-block;
-  background-color: #F96CFF;
-  border: 2px solid #FA92FB;
+  background-color: var(--primary-pink);
+  border: 2px solid var(--secondary-pink);
   color: #fff;
   font-size: 16px;
   line-height: 22px;
@@ -11,6 +19,7 @@ button {
   text-decoration: none;
   box-shadow: 2px 3px 5px 1px #f0f0f0;
 }
+
 .App-logo {
   max-width: 400px;
   display: block;
@@ -20,4 +29,10 @@ margin: 0 auto;
 .search-form {
   text-align: center;
   padding: 30px;
+}
+
+.search-box {
+  border: 0.5px solid var(--secondary-pink);
+  border-radius: 10px;
+  padding: 5px;
 }
