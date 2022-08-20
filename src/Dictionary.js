@@ -6,14 +6,15 @@ import "./App.css";
 
 export default function Dictionary () {
     const [keyword, setKeyword] = useState("");
+    const [result, setResult] = useState(null);
 
     function handleResponse(response) {
-        console.log(response.data);
+        console.log(response.data[0]);
+        setResult(response.data[0]);
     }
 
     function searchKeyword(event) {
         event.preventDefault();
-        alert(`Searching for ${keyword}`);
 
         let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
         axios.get(apiUrl).then(handleResponse);
@@ -36,7 +37,7 @@ export default function Dictionary () {
             <button type="submit">Search</button>
           </form>
         </div>
-        <Result />
+        <Result result={result} />
       </div>
     );
 }
