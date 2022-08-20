@@ -1,5 +1,5 @@
+import React from 'react';
 import logo from './header.png';
-import axios from 'axios';
 import Dictionary from './Dictionary';
 
 import './App.css';
