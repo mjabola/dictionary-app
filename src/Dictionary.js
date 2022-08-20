@@ -1,40 +1,40 @@
-import axios from "axios";
 import React, { useState } from "react";
+import axios from "axios";
 
 import "./App.css";
 
-export default function Dictionary () {
-    const [keyword, setKeyword] = useState("");
+export default function Dictionary() {
+  const [keyword, setKeyword] = useState("");
 
-    function handleResponse(response) {
-        console.log(response.data);
-    }
-    
-    function searchKeyword(event) {
-        event.preventDefault();
-        alert(`Searching for ${keyword}`);
+  function handleResponse(response) {
+    console.log(response.data);
+  }
 
-        let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-        axios.get(apiUrl).then(handleResponse);
-    }
+  function searchKeyword(event) {
+    event.preventDefault();
+    alert(`Searching for ${keyword}`);
 
-    function changeKeyword(event) {
-        setKeyword(event.target.value);
-    }
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
+    axios.get(apiUrl).then(handleResponse);
+  }
 
-    return (
-      <div className="Dictionary">
-        <div className="search-form container">
-          <form onSubmit={searchKeyword}>
-            <input className="search-box"
-              type="search"
-              placeholder="Enter a word..."
-              onChange={changeKeyword}
-            />
-              <button type="submit">Search</button>
+  function changeKeyword(event) {
+    setKeyword(event.target.value);
+  }
 
-          </form>
-        </div>
+  return (
+    <div className="Dictionary">
+      <div className="search-form container">
+        <form onSubmit={searchKeyword}>
+          <input
+            className="search-box"
+            type="search"
+            placeholder="Enter a word..."
+            onChange={changeKeyword}
+          />
+          <button type="submit">Search</button>
+        </form>
       </div>
-    );
+    </div>
+  );
 }
