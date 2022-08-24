@@ -19,16 +19,6 @@ border-radius: 10px;
   text-decoration: none;
   box-shadow: 2px 3px 5px 1px #f0f0f0;
 }
-
-a {
-  color: var(--primary-purple);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--secondary-purple);
-}
-
 .App-logo {
   max-width: 300px;
   display: block;
@@ -44,11 +34,4 @@ margin: 0 auto;
   border-radius: 10px;
   border: 0.5px solid var(--secondary-pink);
 padding: 5px;
-}
-
-.bottom-container {
-  font-size: 10pt;
-  text-align: center;
-  line-height: 20pt;
-  padding: 14px 16px;
 }
