@@ -1,7 +1,6 @@
 @media (max-width: 576px) {
-  h1 {
+  body {
     font-size: 10pt;
-    padding: 0;
   }
 }
 
@@ -20,5 +19,6 @@ code {
 }
 
 main {
-  padding: 0 20%;
+  max-width: 960px;
+  margin: 0 auto;
 }
