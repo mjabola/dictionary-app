@@ -10,6 +10,11 @@ h2 {
   font-weight: bold;
 }
 
+ul {
+  list-style-type: none;
+  display: inline-block;
+}
+
 .example {
   font-size: 12pt;
   font-style: italic;
