@@ -1,5 +1,6 @@
 import React from "react";
 import Definition from "./Definition";
+import Phonetic from "./Phonetic";
 
 import "./Result.css"
 
@@ -8,14 +9,20 @@ if (props.result) {
     return (
       <div className="result-display">
         <h2>{props.result.word}</h2>
-        <p>{props.result.phonetic}</p>
+        {props.result.phonetics.map(function(phonetic, index) {
+          return (
+            <div key={index}>
+              <Phonetic phonetic={phonetic} />
+              </div>
+          );
+        })}
 
         {props.result.meanings.map(function(meaning, index) {
-            return (
+          return (
             <div key={index}>
-<Definition meaning={meaning} />
+              <Definition meaning={meaning} />
             </div>
-            );
+          );
         })}
       </div>
     );
