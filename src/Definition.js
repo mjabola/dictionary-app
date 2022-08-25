@@ -8,6 +8,7 @@ export default function Definition(props) {
     <div className="Definition">
       <h4>{props.meaning.partOfSpeech}</h4>
       {props.meaning.definitions.map(function(definition, index) {
+        console.log(definition);
         if (index < 5) {
           return (
             <div className="result-container">
