@@ -13,6 +13,19 @@ function App() {
       <main>
         <Dictionary />
       </main>
+      <footer>
+        This project was coded by{" "}
+        <strong>
+          <a href="https://www.linkedin.com/in/margarita-jabola/ ">
+            Margarita Jabola
+          </a>
+        </strong>
+        <br />
+        This is open-sourced on{" "}
+        <a href="https://github.com/mjabola/dictionary-app">GitHub</a> and
+        hosted on{" "}
+        <a href="https://resplendent-dodol-db0f86.netlify.app/">Netlify</a>
+      </footer>
     </div>
   );
 }

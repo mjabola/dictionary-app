@@ -15,21 +15,36 @@ ul {
   display: inline-block;
 }
 
+small {
+  font-size: 6pt;
+}
+
+div .Phonetic {
+  font-size:10pt;
+  padding-bottom: 10px;
+}
+
+div .Definition {
+
+  padding: 30px;
+  margin: 20px;
+  border: 1px solid var(--secondary-purple);
+  border-radius: 20px;
+  box-shadow: 2px 3px 5px 1px #f0f0f0;
+}
+
+.listen {
+  padding: 10px;
+}
+
 .example {
-  font-size: 12pt;
-  font-style: italic;
+  font-size: 10pt;
   color: var(--primary-purple);
+  text-indent: 20px;
+  padding-top:10px;
 }
 
 .synonym {
   font-size: 10pt;
-  color: var(--secondary-purple);
-}
-
-.display-definition {
-  border: 1px;
-}
-
-.result-container {
-  padding-bottom: 20px;
+  color: var(--primary-pink);
 }
