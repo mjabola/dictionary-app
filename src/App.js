@@ -16,7 +16,7 @@ function App() {
       <footer>
         This project was coded by{" "}
         <strong>
-          <a href="https://www.linkedin.com/in/margarita-jabola/ ">
+          <a href="https://www.linkedin.com/in/margarita-jabola/">
             Margarita Jabola
           </a>
         </strong>

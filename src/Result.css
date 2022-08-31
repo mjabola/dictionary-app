@@ -47,3 +47,7 @@ div .Definition {
   font-size: 10pt;
   color: var(--primary-pink);
 }
+
+.result-img {
+  padding: 5px;
+}
