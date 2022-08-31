@@ -46,6 +46,7 @@ div .Definition {
 .synonym {
   font-size: 10pt;
   color: var(--primary-pink);
+  padding-top: 10px;
 }
 
 .result-img {
